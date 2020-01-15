@@ -1,0 +1,29 @@
+-# edit.html.haml using partial
+
+%h1 Edit Existing Fridge
+
+= form_tag fridge_path(@fridge), :method => :put do
+
+  = label :fridge, :menu, 'Menu'
+  = text_field :fridge, 'menu'
+  
+  = label :fridge, :ingredient, 'Ingredient; Please divide by comma'
+  = text_field :fridge, 'ingredient'
+  
+  = label :fridge, :recipe, 'Recipe'
+  = text_field :fridge, 'recipe'
+
+  = label :fridge, :rating, 'Rating'
+  = select :fridge, :rating, ['1','2','3','4','5']
+
+  = label :fridge, :where, 'Continent'
+  = select :fridge, :where, ['Africa','Asia','Austrailia/Oceania','Europe','North America', 'South America']
+
+  = submit_tag 'Update Menu'
+  
+%h2 Edit Existing Fridge
+
+= form_tag fridge_path(@fridge), :method => :put do
+
+  = render :partial => 'fridge_form'
+  = submit_tag 'Update Menu Info'

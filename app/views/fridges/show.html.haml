@@ -1,0 +1,16 @@
+-# in app/views/fridge/show.html.haml
+
+%h2 Details about #{@fridge.menu}
+
+%ul#menu
+  %li
+    Rating:
+    = @fridge.rating
+
+%h3 Description:
+
+%p#recipe= @fridge.recipe
+
+= link_to 'Edit', edit_fridge_path(@fridge)
+= button_to 'Delete', fridge_path(@fridge), :method => :delete, :confirm => 'Are you sure?'
+= link_to 'Back to Menu list', fridges_path

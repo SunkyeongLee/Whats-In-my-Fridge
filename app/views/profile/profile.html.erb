@@ -1,0 +1,16 @@
+<% @profiles.each do |profile| %>
+Welcome, <%=profile.username%><br>
+I am <%=profile.usergender%><br>
+I am from <%=profile.country%><br>
+I love <%=profile.preference%><br>
+<br>
+What's in my fridge
+<br>
+<%=profile.useringredient%>
+<br>
+<br>
+<% end %>
+
+
+<a href='/profile/write'>Add my profile</a> <br>
+<a href='/fridges'>Go to main menu</a><br>

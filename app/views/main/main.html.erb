@@ -1,0 +1,21 @@
+<h>search recipe: </h>
+<%= form_tag search_recipes_path, :method => :get do%>
+<%= text_field_tag :query, params[:query] %> <%= submit_tag "Search" %>
+<% end %>
+<br>
+
+
+<% @recipes.each do |recipe| %>
+<%=recipe.menu%>
+<%=recipe.ingredient%>
+<%=recipe.recipe%>
+<%=recipe.country%>
+<%=recipe.rate%>
+<br>
+<br>
+
+<% end %>
+<a href='/write'>Add recipe</a>
+<br>
+<a href='/profile'>Go to my profile</a>
+

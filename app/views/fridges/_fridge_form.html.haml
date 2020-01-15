@@ -1,0 +1,22 @@
+- unless @fridge.errors.empty?
+  #warning
+    Errors prevented this fridge from being #{fridges_controller}d:
+    %%ul
+      %li
+        -@fridge.errors.full_messages.each do |error|
+      %li = error
+
+= label :fridge, :menu, 'Menu'
+= text_field :fridge, 'menu'
+  
+= label :fridge, :ingredient, 'Ingredient; Please divide by comma'
+= text_field :fridge, 'ingredient'
+  
+= label :fridge, :recipe, 'Recipe'
+= text_field :fridge, 'recipe'
+
+= label :fridge, :rating, 'Rating'
+= select :fridge, :rating, ['1','2','3','4','5']
+
+= label :fridge, :where, 'Continent'
+  = select :fridge, :where, ['Africa','Asia','Austrailia/Oceania','Europe','North America', 'South America']

@@ -1,0 +1,146 @@
+// Place all the styles related to the fridge controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.backgroud {
+    background-image: url(Frontbackgroud.jpg);
+    height: 800px;
+    margin: 0px;
+    overflow-x: hidden;
+    //position: relative;
+   // width: 900px;
+    
+    background-color: #ce6839;
+    background-repeat: repeat-x;
+    background-position: center;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 64px ;
+    color: white;
+    border: black;
+    top: 30%;
+    width: 90vw;
+    position: absolute;
+    left: 30%;
+    z-index: 0;
+    padding: 0;
+    margin: 0;
+    blockcolor: black;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+form {
+    border: 3px solid #f1f1f1;
+}
+
+}
+
+input[type=email], input[type=password]{
+    width :100%;
+    padding: 8px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    position: center;
+    z-index: 0;
+    padding: 0;
+    margin: 0;
+}
+
+div.url1 {
+    font-size: 25px ;
+    blockcolor: black;
+    margin: 0;
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    margin-right: -50%;
+    text-shadow: -0.5px 0 black, 0 1px black, 0.5px 0 black, 0 -1px black;
+}
+
+div.url2 {
+    font-size: 25px ;
+    blockcolor: black;
+    margin: 0;
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    margin-right: -50%;
+}
+
+div.url3 {
+    font-size: 25px ;
+    color: black;
+    //blockcolor: black;
+    margin: 0;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    margin-right: -50%;
+}
+
+p.border{
+    border-style: double;
+}
+
+.button {
+      border: none;
+      color: white;
+      padding: 16px 32px;
+      text-align: center;
+      font-size: 16px;
+      margin: 4px 2px;
+      opacity: 0.6;
+      transition: 0.3s;
+      display: inline-block;
+      text-decoration: none;
+      cursor: pointer;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+button1 {
+    background-color: #f4511e;
+}
+
+button2 {
+    background-color: #99e6e6;
+}
+
+button3 {
+    background-color: #79ff4d;
+}
+
+button4 {
+    background-color: #ff4da6;
+}
+
+button5 {
+    background-color: #ccff33;
+}
