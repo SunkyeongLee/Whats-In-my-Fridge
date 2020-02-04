@@ -2,6 +2,8 @@
 
 This is the web page "What's in my fridge" created by Ruby on Rails. Reupdated on my personal repo. Originally developed on environment AWS Cloud 9. Interface is incomplete but soon will be updated (After me finishing an algorithm study. will try my best!)
 
+This is the web page that retrieves the recipes that contain the ingredients user searches. Provide insights of the dinner menu with what they currently have in their fridge.
+
 Required extension for this app:
     Ruby extension
     SQLite
